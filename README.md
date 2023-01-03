@@ -6,7 +6,6 @@ Now, a Finite State Machine (FSM for short) is a system where different inputs c
 #
 
 ## Components of the FSM ⚙️
-Few things to note before I elaborate further on this FSM, this system won't remember change and the user can't request money back.
 
 ### States
 There are 4 states in this case:
