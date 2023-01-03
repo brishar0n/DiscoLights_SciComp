@@ -1,0 +1,1 @@
+void states(int q0, int q1, int o0, int i, int* Q0, int* Q1, int* O0);
