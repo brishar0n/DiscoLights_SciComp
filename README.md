@@ -1,4 +1,4 @@
-# ┌(・。・)┘♪ Gum Vending Machine System using Finite State Machine (FSM)
+# Gum Vending Machine System using Finite State Machine (FSM)
 
 ## What exactly is a 'Finite State Machine'? 💭
 Now, a Finite State Machine (FSM for short) is a system where different inputs can alter the changes in each state present. Other examples of FSM include a ticket machine, an alarm clock, and many more.
