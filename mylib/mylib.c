@@ -10,5 +10,5 @@ void states(int q0, int q1, int o0, int i, int* Q0, int* Q1, int* O0){
 
 // void states(int q0, int q1, int o0, int b, int* Q0, int* Q1, int* O0){
 //     *Q0 = q0;
-//     *SQ1 = q1;
+//     *Q1 = q1;
 //     *O0 = o0;
