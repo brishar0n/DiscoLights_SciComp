@@ -31,5 +31,5 @@ These combinational boolean equations will come in handy in writing the code for
 
 ## Results & Visualisation
 Here are 2 example scenarios of my FSM:
-![1](images/1.png)
-![2](images/2.png)
+![Scenario-1](images/Scenario-1.png)
+![Scenario-2](images/Scenario-2.png)
