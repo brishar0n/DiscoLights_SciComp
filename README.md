@@ -29,4 +29,7 @@ These combinational boolean equations will come in handy in writing the code for
 
 #
 
-## Results & Visualisation:
+## Results & Visualisation
+Here are 2 example scenarios of my FSM:
+![1](images/1.png)
+![2](images/2.png)
