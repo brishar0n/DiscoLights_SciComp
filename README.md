@@ -30,6 +30,5 @@ These combinational boolean equations will come in handy in writing the code for
 #
 
 ## Results & Visualisation
-Here are 2 example scenarios of my FSM:
+Here is an example scenario of my FSM:
 ![Scenario-1](images/Scenario-1.png)
-![Scenario-2](images/Scenario-2.png)
