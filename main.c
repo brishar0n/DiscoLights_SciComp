@@ -94,10 +94,10 @@ int main() {
       i2 = 0;
     }
 
-    state(q0, q1, i1, i2, &Q0, &Q1);
+    state(i1, i2, q0, q1, &Q0, &Q1);
     q0 = Q0;
     q1 = Q1;
-    output(q0, q1, &o0);
+    output(i1, i2, q0, q1, &o0);
   }
   return 0;
 }
