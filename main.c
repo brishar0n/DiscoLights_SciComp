@@ -11,51 +11,10 @@ void reset() {
 } 
 
 int main() {
-  int q0 = 0, q1 = 0, Q0 = 0, Q1 = 0, o0 = 0, i1 = 0, i2 = 0;
+  int q0 = 0, q1 = 0, i1 = 0, i2 = 0, Q0 = 0, Q1 = 0, o0 = 0;
   while (true) {
-    if ((Q0 == 0) && (Q1 == 0)) {
+    if (o0 == 1) {
       clear();
-      printf("   /______________\\\n");
-      printf("   |/__________\\  |\n");
-      printf("   || [ ] [ ] |   |\n");
-      printf("   || [ ] [ ] |   |\n");
-      printf("   || [ ] [ ] | O |\n");
-      printf("   || [ ] [ ] | 0 |\n");
-      printf("   ||_________|   |\n");
-      printf("   ||_________|   |\n");
-      printf("   |______________|\n");
-      printf(" \n");
-
-    } 
-    else if ((Q0 == 0) && (Q1 == 1)) {
-      clear();
-      printf("   /______________\\\n");
-      printf("   |/__________\\  |\n");
-      printf("   || [ ] [ ] |   |\n");
-      printf("   || [ ] [ ] |   |\n");
-      printf("   || [ ] [ ] | O |\n");
-      printf("   || [ ] [ ] | 0 |\n");
-      printf("   ||_________|   |\n");
-      printf("   ||_________|   |\n");
-      printf("   |______________|\n");
-      printf(" \n");
-
-    } 
-    else if ((Q0 == 1) && (Q1 == 0)) {
-      clear();
-      printf("   /______________\\\n");
-      printf("   |/__________\\  |\n");
-      printf("   || [ ] [ ] |   |\n");
-      printf("   || [ ] [ ] |   |\n");
-      printf("   || [ ] [ ] | O |\n");
-      printf("   || [ ] [ ] | 0 |\n");
-      printf("   ||_________|   |\n");
-      printf("   ||_________|   |\n");
-      printf("   |______________|\n");
-      printf(" \n");
-
-    } 
-    else if ((Q0 == 1) && (Q1 == 1)) {
       printf("   /______________\\\n");
       printf("   |/__________\\  |\n");
       printf("   || [ ] [ ] |   |\n");
@@ -67,37 +26,46 @@ int main() {
       printf("   |______________|\n");
       printf(" \n");
       printf("Item dispensed. Thank you for your purchase!\n");
+      printf(" \n");
+
+    } 
+    else {
+      clear();
+      printf("   /______________\\\n");
+      printf("   |/__________\\  |\n");
+      printf("   || [ ] [ ] |   |\n");
+      printf("   || [ ] [ ] |   |\n");
+      printf("   || [ ] [ ] | O |\n");
+      printf("   || [ ] [ ] | 0 |\n");
+      printf("   ||_________|   |\n");
+      printf("   ||_________|   |\n");
+      printf("   |______________|\n");
+      printf(" \n");
     }
-    
-    printf("Type the input (0 for nothing | 1 for a dime | 2 for a nickel | 3 for both: ");
+    reset();
+
+    printf("Click 0 (reset) if you're done using the vending machine.\n");
+    printf("Type the input (1 for a nickel (5c) | 1 then 2 / 2 then 1 for nickel and dime): ");
     int coin;
     scanf("%d", &coin);
 
-    if (coin == 0) {
+    if (coin == 1) {
       i1 = 0;
-      i2 = 0;
-    } 
-    else if (coin == 1) {
-      i1 = 1;
-      i2 = 0;
+      i2 = 1;
     } 
     else if (coin == 2) {
-      i1 = 0;
-      i2 = 1;
-    } 
-    else if (coin == 3) {
       i1 = 1;
-      i2 = 1;
+      i2 = 0;
     } 
     else {
       i1 = 0;
       i2 = 0;
     }
 
-    state(i1, i2, q0, q1, &Q0, &Q1);
+    state(q0, q1, i1, i2, &Q0, &Q1);
     q0 = Q0;
     q1 = Q1;
-    output(i1, i2, q0, q1, &o0);
+    output(q0, q1, i1, i2, &o0);
   }
   return 0;
 }
