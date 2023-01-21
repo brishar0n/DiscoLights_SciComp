@@ -18,17 +18,17 @@ There are 4 states in this case:
 
 To further elaborate on the process of the Vending Machine utilizing FSM, here's a state diagram, along with the transition table and karnaugh maps, I put together:
 
-![State-Diagram](images/State-Diagram.png)
+![State-Diagram](images/State-DiagramRil.png)
 
 ### Transition Table
-![State-Table](images/State-Table.png)
+![State-Table](images/State-TableRil.png)
 
 ### Karnaugh Maps and Combinational Boolean Equations
 These combinational boolean equations will come in handy in writing the code for the main.c to jot down the possible outcomes.
-![Karnaugh-Maps](images/Karnaugh-Maps1.png)
+![Karnaugh-Maps](images/Karnaugh-MapsRil.png)
 
 #
 
 ## Results & Visualisation
 Here is an example scenario of my FSM:
-![Scenario-1](images/Scenario-1.png)
+![Scenario-1](images/Rundown.gif)
