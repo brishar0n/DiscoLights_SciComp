@@ -25,7 +25,7 @@ To further elaborate on the process of the Vending Machine utilizing FSM, here's
 
 ### Karnaugh Maps and Combinational Boolean Equations
 These combinational boolean equations will come in handy in writing the code for the main.c to jot down the possible outcomes.
-![Karnaugh-Maps](images/Karnaugh-Maps2.png)
+![Karnaugh-Maps](images/Karnaugh-Maps1.png)
 
 #
 
